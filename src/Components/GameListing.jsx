@@ -23,7 +23,7 @@ function GameListing(props) {
       </h2>
       <button
         onClick={props.addToCart}
-        className=" cursor-pointer mt-[0.7rem] px-[0.7rem] py-[0.3rem] rounded-lg bg-gradient-to-r from-[#75b022] to-[#588b1a] font-semibold"
+        className=" pointer-events-auto cursor-pointer mt-[0.7rem] px-[0.7rem] py-[0.3rem] rounded-lg bg-gradient-to-r from-[#75b022] to-[#588b1a] font-semibold"
       >
         Add to Cart
       </button>
