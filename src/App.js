@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useCallback } from "react";
+import Header from "./Components/Header";
+import Main from "./Components/Main";
+import Footer from "./Components/Footer";
+// import Navbar from "./Components/Navbar";
+import HomePageMain from "./Components/HomePageMain";
 
 function App() {
+  const [content, setcontent] = useState(<HomePageMain />);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div>
+      <header className=" h-[3.5rem] w-[100%] bg-black grid place-content-center">
+        <Header />
       </header>
+      <main className=" h-auto bg-black grid">
+        <Main val={content} />
+      </main>
+      <footer className=" h-[6rem] bg-black grid place-content-center border-t-2 border-white">
+        <Footer />
+      </footer>
     </div>
   );
 }

@@ -1,0 +1,30 @@
+import React from "react";
+
+function GameListing(props) {
+  return (
+    <div
+      id={props.trackerID}
+      className=" pt-8 pb-6 border-t-2 border-sky-300 bg-gradient-to-b from-black via-sky-900 to-black text-white p-2 w-[100%] flex flex-col items-center"
+    >
+      <img
+        onClick={props.clickDesc}
+        className=" w-[14rem] h-[14rem] mb-2 rounded-lg border-[3px] border-sky-500"
+        src={props.imgsrc}
+      />
+      <h1 onClick={props.clickDesc} className=" font-bold text-white">
+        {props.name}
+      </h1>
+      <h2 onClick={props.clickDesc}>
+        ${props.price[0]}.{props.price[1]}
+      </h2>
+      <button
+        onClick={props.addToCart}
+        className=" cursor-pointer mt-[0.7rem] px-[0.7rem] py-[0.3rem] rounded-lg bg-gradient-to-r from-[#75b022] to-[#588b1a] font-semibold"
+      >
+        Add to Cart
+      </button>
+    </div>
+  );
+}
+
+export default GameListing;
