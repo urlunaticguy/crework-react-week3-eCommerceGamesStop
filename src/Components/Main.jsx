@@ -9,14 +9,13 @@ const cartArray = []; //should not be inside re-render
 
 function Main(props) {
   const [content, setcontent] = useState(props.val);
-  const [id, setid] = useState("");
+  const [idd, setid] = useState("");
   const [cart, setcart] = useState([]);
 
   const ids = ["fps", "sports", "tps"];
   const indexes = [0, 5, 10];
 
   const handleGameInfoClick = (event) => {
-    console.log(event.target.parentElement.id);
     const q = parseInt(event.target.parentElement.id);
     setcontent(<GameDescription indexx={q} cartAdd={handleAddToCart} />);
     window.scrollTo(0, 0);
@@ -68,8 +67,8 @@ function Main(props) {
   };
 
   useEffect(() => {
-    const index = indexes[ids.indexOf(id)];
-    if (id !== "") {
+    const index = indexes[ids.indexOf(idd)];
+    if (idd !== "") {
       setcontent(
         <GameList
           clickMain={handleGameInfoClick}
@@ -79,7 +78,7 @@ function Main(props) {
       );
       window.scrollTo(0, 0);
     }
-  }, [id]);
+  }, [idd]);
 
   return (
     <div className="text-white">

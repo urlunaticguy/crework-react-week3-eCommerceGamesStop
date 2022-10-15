@@ -1,8 +1,7 @@
-import React, { useState, useCallback } from "react";
+import React, { useState } from "react";
 import Header from "./Components/Header";
 import Main from "./Components/Main";
 import Footer from "./Components/Footer";
-// import Navbar from "./Components/Navbar";
 import HomePageMain from "./Components/HomePageMain";
 
 function App() {

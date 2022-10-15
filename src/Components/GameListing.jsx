@@ -1,21 +1,25 @@
 import React from "react";
+import gameDataObj from "../Utils/GameData";
 
 function GameListing(props) {
   return (
     <div
-      id={props.trackerID}
-      className=" pt-8 pb-6 border-t-2 border-sky-300 bg-gradient-to-b from-black via-sky-900 to-black text-white p-2 w-[100%] flex flex-col items-center"
+      id={gameDataObj[props.indd].id}
+      className=" pointer-events-none pt-8 pb-6 border-t-2 border-sky-300 bg-gradient-to-b from-black via-sky-900 to-black text-white p-2 w-[100%] flex flex-col items-center"
     >
       <img
         onClick={props.clickDesc}
-        className=" w-[14rem] h-[14rem] mb-2 rounded-lg border-[3px] border-sky-500"
-        src={props.imgsrc}
+        className=" pointer-events-auto w-[14rem] h-[14rem] mb-2 rounded-lg border-[3px] border-sky-500"
+        src={gameDataObj[props.indd].img}
       />
-      <h1 onClick={props.clickDesc} className=" font-bold text-white">
-        {props.name}
+      <h1
+        onClick={props.clickDesc}
+        className=" pointer-events-auto font-bold text-white"
+      >
+        {gameDataObj[props.indd].name}
       </h1>
-      <h2 onClick={props.clickDesc}>
-        ${props.price[0]}.{props.price[1]}
+      <h2 onClick={props.clickDesc} className=" pointer-events-auto">
+        ${gameDataObj[props.indd].price[0]}.{gameDataObj[props.indd].price[1]}
       </h2>
       <button
         onClick={props.addToCart}

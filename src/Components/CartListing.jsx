@@ -5,7 +5,6 @@ function CartListing(props) {
   return (
     <div
       id={gameDataObj[props.index].id}
-      //   id={props.uniqueNo}
       className=" flex w-[100%] justify-center mb-10 bg-gradient-to-b from-black via-[#0f6600] to-black"
     >
       <img
