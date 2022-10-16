@@ -15,7 +15,7 @@ function App() {
       <main className=" h-auto bg-black grid">
         <Main val={content} />
       </main>
-      <footer className=" h-[6rem] bg-black grid place-content-center border-t-2 border-white">
+      <footer className=" h-[6rem] bg-black grid place-content-center border-t-2 border-b-2 border-white">
         <Footer />
       </footer>
     </div>

@@ -8,7 +8,7 @@ function GameDescription(props) {
       className=" flex flex-col justify-center items-center mb-8"
     >
       <img
-        className=" w-[15rem] h-[15rem] border-4 border-white"
+        className=" w-[15rem] h-[15rem] lg:w-[18rem] lg:h-[18rem] border-4 border-white"
         src={gameDataObj[props.indexx].img}
       />
       <label className=" text-[1.4rem] mt-2">
@@ -20,7 +20,7 @@ function GameDescription(props) {
       </label>
       <button
         onClick={props.cartAdd}
-        className=" cursor-pointer px-2 py-1 mb-2 rounded-lg bg-gradient-to-r from-[#75b022] to-[#588b1a] font-semibold"
+        className=" cursor-pointer px-2 py-1 mb-2 rounded-lg bg-gradient-to-r from-[#75b022] to-[#588b1a] font-semibold hover:underline"
       >
         Add to Cart
       </button>

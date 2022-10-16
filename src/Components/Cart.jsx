@@ -32,10 +32,10 @@ function Cart(props) {
     <div className=" text-white pt-4">
       <div className=" flex flex-col justify-center text-center align-middle items-center mb-8">
         <div className=" bg-fuchsia-900 px-4 py-1 rounded-full">
-          <label>Total Cart Value : </label>
-          <label className=" font-bold">${cartAmount}</label>
+          <label className=" lg:text-[1.2rem]">Total Cart Value : </label>
+          <label className=" font-bold lg:text-[1.4rem]">${cartAmount}</label>
         </div>
-        <button className=" bg-slate-700 w-[6rem] text-[1rem] mt-2 px-4 py-1 rounded-full cursor-pointer">
+        <button className=" bg-slate-700 w-[6rem] text-[1rem] mt-2 px-4 py-1 rounded-full cursor-pointer hover:underline">
           Checkout
         </button>
       </div>

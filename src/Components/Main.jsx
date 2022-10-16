@@ -30,16 +30,18 @@ function Main(props) {
     event.target.classList.remove(
       "bg-gradient-to-r",
       "from-[#75b022]",
-      "to-[#588b1a]"
+      "to-[#588b1a]",
+      "pointer-events-auto"
     );
-    event.target.classList.add("bg-blue-700");
+    event.target.classList.add("bg-blue-700", "pointer-events-none");
     setTimeout(() => {
       event.target.innerHTML = "Add to Cart";
-      event.target.classList.remove("bg-blue-700");
+      event.target.classList.remove("bg-blue-700", "pointer-events-none");
       event.target.classList.add(
         "bg-gradient-to-r",
         "from-[#75b022]",
-        "to-[#588b1a]"
+        "to-[#588b1a]",
+        "pointer-events-auto"
       );
     }, 1100);
     const z = parseInt(event.target.parentElement.id);
@@ -120,7 +122,7 @@ function Main(props) {
         cartItemsCount={cartCount}
       />
       <div
-        className=" pt-[3.5rem]"
+        className=" pt-[3.5rem] lg:pt-[7rem]"
         onClick={(event) => {
           setid(event.target.id);
         }}

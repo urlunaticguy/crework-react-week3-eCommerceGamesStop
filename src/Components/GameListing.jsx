@@ -9,12 +9,12 @@ function GameListing(props) {
     >
       <img
         onClick={props.clickDesc}
-        className=" pointer-events-auto w-[14rem] h-[14rem] mb-2 rounded-lg border-[3px] border-sky-500"
+        className=" pointer-events-auto cursor-pointer w-[14rem] h-[14rem] lg:w-[26rem] lg:h-[20rem] mb-2 rounded-lg border-[3px] border-sky-500"
         src={gameDataObj[props.indd].img}
       />
       <h1
         onClick={props.clickDesc}
-        className=" pointer-events-auto font-bold text-white"
+        className=" pointer-events-auto cursor-pointer font-bold text-white"
       >
         {gameDataObj[props.indd].name}
       </h1>
@@ -23,7 +23,7 @@ function GameListing(props) {
       </h2>
       <button
         onClick={props.addToCart}
-        className=" pointer-events-auto cursor-pointer mt-[0.7rem] px-[0.7rem] py-[0.3rem] rounded-lg bg-gradient-to-r from-[#75b022] to-[#588b1a] font-semibold"
+        className=" pointer-events-auto cursor-pointer mt-[0.7rem] px-[0.7rem] py-[0.3rem] rounded-lg bg-gradient-to-r from-[#75b022] to-[#588b1a] font-semibold hover:underline"
       >
         Add to Cart
       </button>
