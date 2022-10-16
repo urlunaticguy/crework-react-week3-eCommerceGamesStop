@@ -81,6 +81,7 @@ function Main(props) {
     ycounter--;
     if (ycounter === 0) {
       ycounter = undefined;
+      zcounter = 0;
     }
     setcartcount(ycounter);
     setcart(cartArray);
