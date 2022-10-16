@@ -29,6 +29,11 @@ function GameList(props) {
         indd={props.startIndex + 4}
         addToCart={props.cartButtonClick}
       />
+      {/* <GameListing
+        clickDesc={props.clickMain}
+        indd={props.startIndex + 5}
+        addToCart={props.cartButtonClick}
+      /> */}
     </div>
   );
 }

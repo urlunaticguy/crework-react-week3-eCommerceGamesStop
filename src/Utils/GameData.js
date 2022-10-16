@@ -15,6 +15,7 @@ import NBATwoK from "../Assets/Images/GamesSports/NBA2k22.jpeg";
 import WWETwoK from "../Assets/Images/GamesSports/WWE2k22.png";
 import EFootballTT from "../Assets/Images/GamesSports/eFootball22.jpeg";
 import DBCricket from "../Assets/Images/GamesSports/DBCricket.webp";
+import CODMWTwoImage from "../Assets/Images/GamesFPS/CODMWTwo.jpeg";
 
 const gameDataObj = [
   //FPS start from 0
@@ -68,9 +69,19 @@ const gameDataObj = [
     description:
       "As in Battlefield 1, the single-player campaign is divided into an introduction followed by episodic War Stories, three of which were available at launch: Nordlys takes place from the point-of-view of a Norwegian resistance fighter taking part in the sabotage of the German nuclear program, Tirailleur tells the story of a Senegalese Tirailleur during Operation Dragoon, and Under No Flag puts the player in the shoes of Billy Bridger, a convicted bank robber and explosives expert conscripted into the Special Boat Service to take part in Operation Albumen. The fourth campaign, The Last Tiger, was released on December 5, 2018, which depicts the struggles of a German Tiger I tank crew during the Ruhr Pocket in the closing days of the war.",
   },
-  //Sports start from 5
   {
     id: 5,
+    name: "COD Modern Warfare 2",
+    price: ["27", "99"],
+    img: CODMWTwoImage,
+    dev: "Infinity Ward",
+    year: "2009",
+    description:
+      "During the single-player campaign, the player controls five different characters from a first-person perspective. The player primarily controls Sergeant Gary Roach Sanderson, a British member of an international special forces unit named Task Force 141. In addition to Roach, the player will also assume control of Private First Class Joseph Allen (Troy Baker) and Private James Ramirez of the U.S. Army's 1st Battalion/75th Ranger Regiment. The now Captain John Soap MacTavish (Kevin McKidd) serves as a senior member of Task Force 141, acting as Roach's superior officer and becomes the playable character in the final three missions of the game. Lastly, the player briefly assumes the role of an astronaut stationed on the International Space Station during the height of the war between the United States and Russia.",
+  },
+  //Sports start from 6
+  {
+    id: 6,
     name: "FIFA 23",
     price: ["29", "99"],
     img: FIFATwentyThree,
@@ -80,7 +91,7 @@ const gameDataObj = [
       "FIFA 23 is a football simulation video game published by Electronic Arts. It is the 30th and final installment in the FIFA series that is developed by EA Sports, and released worldwide on 30 September 2022 for PC, Nintendo Switch, PlayStation 4, PlayStation 5, Xbox One, Xbox Series X/S and Google Stadia.",
   },
   {
-    id: 6,
+    id: 7,
     name: "NBA 2k22",
     price: ["24", "99"],
     img: NBATwoK,
@@ -90,7 +101,7 @@ const gameDataObj = [
       "NBA 2K22 is a 2021 basketball video game developed by Visual Concepts and published by 2K Sports, based on the National Basketball Association (NBA). It is the 23rd installment in the NBA 2K franchise, the successor to NBA 2K21 and the predecessor to NBA 2K23. The game was released on September 10, 2021 for Microsoft Windows, Nintendo Switch, PlayStation 4, PlayStation 5, Xbox One, and Xbox Series X/S.",
   },
   {
-    id: 7,
+    id: 8,
     name: "WWE 2k22",
     price: ["19", "99"],
     img: WWETwoK,
@@ -100,7 +111,7 @@ const gameDataObj = [
       "WWE 2K22 is a 2022 professional wrestling sports video game developed by Visual Concepts and published by 2K Sports. It is the twenty-second overall installment of the video game series based on WWE, the ninth game under the WWE 2K banner, and the successor to 2019's WWE 2K20. It was released on March 11, 2022, for PlayStation 4, PlayStation 5, Windows, Xbox One, and Xbox Series X/S.",
   },
   {
-    id: 8,
+    id: 9,
     name: "eFootball 2022",
     price: ["34", "99"],
     img: EFootballTT,
@@ -110,7 +121,7 @@ const gameDataObj = [
       "eFootball is an association football simulation video game developed and published by Konami. It is a free-to-play game after being completely rebranded from the original Pro Evolution Soccer (known as Winning Eleven in Japan) series to the eFootball series. The game's first year, entitled eFootball 2022, was released on 30 September 2021. It was later changed to the game's second year, eFootball 2023, on August 25, 2022. This game is part of IESF World Championship and North and Eastern Europa League (NEEC).",
   },
   {
-    id: 9,
+    id: 10,
     name: "Don Bradman Cricket 17",
     price: ["14", "99"],
     img: DBCricket,
@@ -119,9 +130,9 @@ const gameDataObj = [
     description:
       "Don Bradman Cricket 17 (DBC 17) is a cricket video game developed by Big Ant Studios. It is the sequel to Don Bradman Cricket 14 and was released on 16 December 2016 for PlayStation 4, Xbox One, and on 16 January 2017 for Microsoft Windows. It was officially announced on 28 May 2016, by Big Ant Studios.",
   },
-  //TPS start from 10
+  //TPS start from 11
   {
-    id: 10,
+    id: 11,
     name: "Grand Theft Auto 5",
     price: ["49", "99"],
     img: GTAFive,
@@ -131,7 +142,7 @@ const gameDataObj = [
       "Grand Theft Auto V is an action-adventure game played from either a third-person or first-person perspective. Players complete missions—linear scenarios with set objectives—to progress through the story. Outside of the missions, players may freely roam the open world. Composed of the San Andreas open countryside area, including the fictional Blaine County, and the fictional city of Los Santos, the world is much larger in area than earlier entries in the series. It may be fully explored after the game's beginning without restriction, although story progress unlocks more gameplay content.",
   },
   {
-    id: 11,
+    id: 12,
     name: "Watch Dogs 2",
     price: ["34", "99"],
     img: WatchDogsTwo,
@@ -141,7 +152,7 @@ const gameDataObj = [
       "Watch Dogs 2 is an action-adventure game with stealth elements and played from a third-person perspective as Marcus Holloway, a young hacker. The game features an open world set in a fictionalized version of the San Francisco Bay Area, an area more than twice as large as the Chicagoland setting from Watch Dogs. It consists of four different areas: San Francisco, Oakland, Marin, and Silicon Valley. Players can navigate the game's world on-foot or by the various vehicles featured in the game, such as cars, trucks, buses, cable cars, motorcycles, quad bikes, and boats.",
   },
   {
-    id: 12,
+    id: 13,
     name: "L.A.Noire",
     price: ["19", "99"],
     img: LANoire,
@@ -151,7 +162,7 @@ const gameDataObj = [
       "L.A. Noire is an action-adventure neo-noir crime game. Played from a third-person perspective, the game is set in an open-world environment featuring Los Angeles in 1947. The player completes cases to progress through the story, fulfilling objectives in a generally linear order; as they roam the open world, the player can also complete optional street crimes—short, linear scenarios with set objectives—and collect items such as golden film reels, vehicles, novels, and golden records.",
   },
   {
-    id: 13,
+    id: 14,
     name: "Red Dead Redemption II",
     price: ["44", "99"],
     img: RDRTwo,
@@ -161,7 +172,7 @@ const gameDataObj = [
       "Red Dead Redemption 2 is a Western-themed action-adventure game. Played from a first or third-person perspective, the game is set in an open-world environment featuring a fictionalized version of the Western, Midwestern, and Southern United States in 1899, during the latter half of the Wild West era and the turn of the twentieth century.",
   },
   {
-    id: 14,
+    id: 15,
     name: "Mafia II",
     price: ["14", "99"],
     img: MafiaTwo,

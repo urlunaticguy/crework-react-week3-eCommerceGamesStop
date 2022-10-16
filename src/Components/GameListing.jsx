@@ -9,7 +9,7 @@ function GameListing(props) {
     >
       <img
         onClick={props.clickDesc}
-        className=" pointer-events-auto cursor-pointer w-[14rem] h-[14rem] lg:w-[26rem] lg:h-[20rem] mb-2 rounded-lg border-[3px] border-sky-500 hover:border-white"
+        className=" pointer-events-auto cursor-pointer w-[14rem] h-[14rem] lg:w-[22rem] lg:h-[20rem] mb-2 rounded-lg border-[3px] border-sky-500 hover:border-white"
         src={gameDataObj[props.indd].img}
       />
       <h1

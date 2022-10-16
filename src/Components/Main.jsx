@@ -6,6 +6,7 @@ import Cart from "./Cart";
 import GameDescription from "./GameDescription";
 
 const cartArray = []; //should not be inside re-render
+let zcounter = 0;
 
 function Main(props) {
   const [content, setcontent] = useState(props.val);
@@ -14,10 +15,9 @@ function Main(props) {
   const [cartCount, setcartcount] = useState();
 
   const ids = ["fps", "sports", "tps"];
-  const indexes = [0, 5, 10];
+  const indexes = [0, 6, 11];
 
-  let zcounter = 0,
-    ycounter = cartCount;
+  let ycounter = cartCount;
 
   const handleGameInfoClick = (event) => {
     const q = parseInt(event.target.parentElement.id);
