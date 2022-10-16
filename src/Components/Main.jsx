@@ -26,6 +26,22 @@ function Main(props) {
   };
 
   const handleAddToCart = (event) => {
+    event.target.innerHTML = "Added";
+    event.target.classList.remove(
+      "bg-gradient-to-r",
+      "from-[#75b022]",
+      "to-[#588b1a]"
+    );
+    event.target.classList.add("bg-blue-700");
+    setTimeout(() => {
+      event.target.innerHTML = "Add to Cart";
+      event.target.classList.remove("bg-blue-700");
+      event.target.classList.add(
+        "bg-gradient-to-r",
+        "from-[#75b022]",
+        "to-[#588b1a]"
+      );
+    }, 1100);
     const z = parseInt(event.target.parentElement.id);
     let flag = -1;
     for (let i = 0; i < cartArray.length; i += 2) {
