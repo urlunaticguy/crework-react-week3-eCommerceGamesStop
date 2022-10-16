@@ -11,9 +11,13 @@ function Main(props) {
   const [content, setcontent] = useState(props.val);
   const [idd, setid] = useState("");
   const [cart, setcart] = useState([]);
+  const [cartCount, setcartcount] = useState();
 
   const ids = ["fps", "sports", "tps"];
   const indexes = [0, 5, 10];
+
+  let zcounter = 0,
+    ycounter = cartCount;
 
   const handleGameInfoClick = (event) => {
     const q = parseInt(event.target.parentElement.id);
@@ -35,6 +39,8 @@ function Main(props) {
       cartArray.push(z);
       cartArray.push(1);
     }
+    zcounter++;
+    setcartcount(zcounter);
     setid("");
     setcart(cartArray);
   };
@@ -43,12 +49,22 @@ function Main(props) {
     let deleteIndex = parseInt(
       event.target.parentElement.parentElement.parentElement.id
     );
-    const targetInd = cartArray.indexOf(deleteIndex);
+    let targetInd = 0;
+    for (let ii = 0; ii < cartArray.length; ii += 2) {
+      if (cartArray[ii] === deleteIndex) {
+        targetInd = ii;
+      }
+    }
     if (cartArray[targetInd + 1] > 1) {
       cartArray[targetInd + 1]--;
     } else {
       cartArray.splice(targetInd, 2);
     }
+    ycounter--;
+    if (ycounter === 0) {
+      ycounter = undefined;
+    }
+    setcartcount(ycounter);
     setcart(cartArray);
     setcontent(<Cart list={cart} deleteItem={handleDeleteFromCart} />);
     setid("");
@@ -85,6 +101,7 @@ function Main(props) {
       <Navbar
         onClickHome={handleNavbarClickForHome}
         onClickCart={handleNavbarClickForCart}
+        cartItemsCount={cartCount}
       />
       <div
         className=" pt-[3.5rem]"
