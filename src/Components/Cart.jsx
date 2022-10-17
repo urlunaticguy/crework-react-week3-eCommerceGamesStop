@@ -1,6 +1,6 @@
 import React from "react";
 import CartListing from "./CartListing";
-import gameDataObj from "../utils/gameData.js";
+import gameDataObj from "../Utils/GameData.js";
 
 function Cart(props) {
   let cartAmount = 0;

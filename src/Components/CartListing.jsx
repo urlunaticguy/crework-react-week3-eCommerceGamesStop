@@ -1,5 +1,5 @@
 import React from "react";
-import gameDataObj from "../utils/gameData.js";
+import gameDataObj from "../Utils/GameData.js";
 
 function CartListing(props) {
   return (
