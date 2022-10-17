@@ -1,5 +1,5 @@
 import React from "react";
-import gameDataObj from "../Utils/GameData";
+import gameDataObj from "../utils/gameData";
 
 function GameListing(props) {
   return (

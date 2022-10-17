@@ -1,10 +1,10 @@
 import React from "react";
 import CartListing from "./CartListing";
-import gameDataObj from "../Utils/GameData.js";
+import gameDataObj from "../utils/gameData.js";
 
 function Cart(props) {
   let cartAmount = 0;
-  var cartContent = [];
+  let cartContent = [];
   if (props.list.length === 0) {
     cartContent.push(
       <h1 key={-1} className=" mb-4 flex justify-center text-center">

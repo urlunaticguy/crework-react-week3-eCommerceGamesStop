@@ -44,7 +44,10 @@ function Main(props) {
         "pointer-events-auto"
       );
     }, 1100);
-    const z = parseInt(event.target.parentElement.id);
+    let z = parseInt(event.target.parentElement.id);
+    if (isNaN(z)) {
+      z = parseInt(event.target.parentElement.parentElement.id);
+    }
     let flag = -1;
     for (let i = 0; i < cartArray.length; i += 2) {
       if (cartArray[i] === z) {
