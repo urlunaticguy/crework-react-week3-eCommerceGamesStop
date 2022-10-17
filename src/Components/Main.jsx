@@ -82,6 +82,7 @@ function Main(props) {
       cartArray.splice(targetInd, 2);
     }
     ycounter--;
+    zcounter--;
     if (ycounter === 0) {
       ycounter = undefined;
       zcounter = 0;
